@@ -1,104 +1,178 @@
-<html>
-      <head>   
-                  <title> Engineering Academy(Group3)</title>
-<link rel="stylesheet"  type="text/css" href="Style.css"/>
-      </head>
-            
-       <body>
-                    <div id="container">
-                           <div id="header">
-               
-                 <h1>Welcome to My website</h1>
-                 <br />Hope you like it
-                 <hr />
-                 <img src="image.jpg" />     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Academy (Group 3)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        #container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #header {
+            background: #003366;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        #header img {
+            max-width: 100%;
+            height: auto;
+        }
+        #nav {
+            float: left;
+            width: 20%;
+            background: #ddd;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        #nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        #nav ul li {
+            margin: 10px 0;
+        }
+        #nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        #main {
+            float: left;
+            width: 80%;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        #main img, video {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        #footer {
+            clear: both;
+            background: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        hr {
+            border: 0;
+            height: 2px;
+            background: #003366;
+            margin: 20px 0;
+        }
+        h1, h2, h3, h4 {
+            color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- Header Section -->
+        <div id="header">
+            <h1>Welcome to My Website</h1>
+            <p>Hope you like it</p>
+            <hr>
+            <img src="image.jpg" alt="Header Image">
+        </div>
 
+        <!-- Navigation Section -->
+        <div id="nav">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+        </div>
 
-                   </div>
-                    <div id="content">
-                             <div id="nav" >
-                                     <h3> Navigation</h3> 
+        <!-- Main Content -->
+        <div id="main">
+            <h2>Blog Page</h2>
+            <p>CONTENTS:</p>
 
-<ul>
+            <!-- Day 1 -->
+            <h3>Day 1: (Fun yet Interesting)</h3>
+            <hr>
+            <h4>Icecream Stick Bridge O.O</h4>
+            <p>Using ice cream sticks to make a stable bridge to withstand weights of different types of tools.</p>
+            <p>We must complete the following tasks:</p>
+            <ul>
+                <li>Width of 5cm</li>
+                <li>Length of 30cm</li>
+            </ul>
+            <p>Our bridge was so flexible that it surprisingly didn't break at all, even after putting on weights of tools.</p>
+            <img src="img/bridge.jpeg" alt="Completed Bridge">
 
-<li><a href=" index.html ">Home</a></li>
-<li><a href=" Resources.html">Resources</a></li>
-<li><a href="Blog.html ">Blog</a></li>
+            <!-- Day 2 and Day 3 -->
+            <h3>Day 2 / Day 3:</h3>
+            <hr>
+            <h4>Airplane Messenger</h4>
+            <p>Using A4 size paper to create 3 different airplane designs to pass messages to the furthest location.</p>
 
-</ul>
+            <p>Plan 1:</p>
+            <img src="img/Plan Plane.jpg" alt="Plan 1">
 
-              </div>
-                 <div id="main">  
-                      <h2>Blog page</h2>
-                     <p>CONTENTS:</p>
-               </div>
-        
-               <h3>Day 1:(Fun yet interesting)</h3>
-            <hr/>
-               <h4> Icecream Stick Bridge O.O</h4>
-               <p> Using icecream sticks to make a stable bridge to withstand weights of different types of tools.</p>
-               <p> We must complete the following tasks: </p>
-               <p>-width of 5cm</p>
-               <p>-length of 30cm</p>
-               <p> Our Bridge was so flexible that it surprisingly didnt broke at all...after putting on weights of the tools.</p>
-               <img src="img/bridge.jpeg"  id="blogImg" alt="Completed Bridge" 
-            <br>               
- 
-               <h3>Day 2/ Day 3:</h3>
-            <hr/>
-               <h4> Airplane Messenger </h4>
-               <p> Using A4 size paper to create 3 different airplane designs to pass message to the furtherest location. </p>
-                
-                <p>Plan 1:</p>
-                <img src="img/Plan Plane.jpg" id="blogImg" alt="Plan"
-           <br>                
-                 <p>Plan 2:</p>
-                <img src="img/Plan Plane 2.jpg" id="blogImg" alt="Plan 2"
-           <br>               
-                 <p>Plan 3:</p>
-                <img src="img/Plan Plane 3.jpg" id="blogImg" alt="Plan 3"
-           <br>
-                <p>Design 1:</p>
-               <img src="img/Plane 1.jpg " id="blogImg" alt="Design 1"
-           <br>
-               <p>Design 2:</p>
-               <img src="img/Plane 2.jpg" id="blogImg" alt="Design 2"
-           <br>
-               <p>Design 3:</p>
-               <img src="img/Plane 3.jpg " id="blogImg" alt="Design 3"
-           <br>             
-                <h4>(In The End, Design 3 proved to be the best plane to be created to fly the furtherest.)</h4> 
+            <p>Plan 2:</p>
+            <img src="img/Plan Plane 2.jpg" alt="Plan 2">
 
-               <h4>Plan for Automatic Plane Launcher</h4>
-               <p> We must make a plane laucher which is program by arudino to control its movement and direction.</p>
-              <p>Plan 1(For Automatic Plane Launcher): </p>
-               <img src="img/Plan 1.jpg"  id="blogImg" alt="Plan 1" 
-            <br>                                      
-             <p>SKETCH 1: </p>
-               <img src="img/sketch 1.jpg"  id="blogImg" alt="SKETCH 1" 
-            <br>               
-              <p>Plan 2(Using Arduino): </p>
-               <img src="img/Smashing Rottis.png"  id="blogImg" alt="Planning Using Arduino" 
-            <br>     
-              <p>Outer product:</p>
-               <img src="img/launcher.jpeg"  id="blogImg" 
-            <br>     
-              <p>Product(Inside):</p>
-               <img src="img/inside.jpg"  id="blogImg" 
-            <br>     
-                <p>Fixing our product: </p>
-               <img src="img/fixing 1.jpeg"  id="blogImg" 
-            <br>       
-                <p>Video Of The Finsihed Product(Testing): </p>
-               <video width="500" height="1080" controls >
-               <source src="img/video.mp4"  type="video/mp4">
-  </video>
-            <br>       
+            <p>Plan 3:</p>
+            <img src="img/Plan Plane 3.jpg" alt="Plan 3">
 
-               </div>
-                    <div id="footer">
-                              Thank You For Reading! ;)
-               </div> 
-                                                             
-        </body>
+            <p>Design 1:</p>
+            <img src="img/Plane 1.jpg" alt="Design 1">
+
+            <p>Design 2:</p>
+            <img src="img/Plane 2.jpg" alt="Design 2">
+
+            <p>Design 3:</p>
+            <img src="img/Plane 3.jpg" alt="Design 3">
+
+            <h4>(In the end, Design 3 proved to be the best plane created to fly the furthest.)</h4>
+
+            <!-- Plane Launcher -->
+            <h4>Plan for Automatic Plane Launcher</h4>
+            <p>We must make a plane launcher which is programmed by Arduino to control its movement and direction.</p>
+
+            <p>Plan 1 (For Automatic Plane Launcher):</p>
+            <img src="img/Plan 1.jpg" alt="Plan 1">
+
+            <p>SKETCH 1:</p>
+            <img src="img/sketch 1.jpg" alt="Sketch 1">
+
+            <p>Plan 2 (Using Arduino):</p>
+            <img src="img/Smashing Rottis.png" alt="Arduino Plan">
+
+            <p>Outer Product:</p>
+            <img src="img/launcher.jpeg" alt="Plane Launcher">
+
+            <p>Product (Inside):</p>
+            <img src="img/inside.jpg" alt="Inside View of Launcher">
+
+            <p>Fixing Our Product:</p>
+            <img src="img/fixing 1.jpeg" alt="Fixing the Product">
+
+            <p>Video of the Finished Product (Testing):</p>
+            <video width="500" controls>
+                <source src="img/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Footer Section -->
+        <div id="footer">
+            Thank You For Reading! ;)
+        </div>
+    </div>
+</body>
 </html>
