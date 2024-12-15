@@ -1,0 +1,96 @@
+/* Style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#header img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 15px;
+}
+
+#content {
+    display: flex;
+    flex: 1;
+}
+
+#nav {
+    width: 20%;
+    background-color: #0066cc;
+    color: white;
+    padding: 15px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#nav h3 {
+    margin-top: 0;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#nav ul li {
+    margin: 10px 0;
+}
+
+#nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#main {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+#main h2 {
+    margin-top: 0;
+}
+
+#main img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#blogImg {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
