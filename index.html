@@ -36,14 +36,58 @@
         #nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
         #nav ul li {
             margin: 10px 0;
+            position: relative;
         }
         #nav ul li a {
+            display: block;
             text-decoration: none;
             color: #333;
             font-weight: bold;
+            padding: 8px 15px;
+        }
+        #nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #eee;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            z-index: 1;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        #nav ul li:hover > ul {
+            display: block;
+        }
+        #nav ul li ul li {
+            margin: 0;
+            border-bottom: 1px solid #ddd;
+        }
+        #nav ul li ul li:last-child {
+            border-bottom: none;
+        }
+        #nav ul li ul li a {
+            padding: 8px 15px;
+            display: block;
+        }
+        #nav ul li ul li ul {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            width: 200px;
+        }
+        #nav ul li ul li:hover > ul {
+            display: block;
         }
         #main {
             float: left;
@@ -89,7 +133,35 @@
                 <ul>
                     <li><a href=" index.html ">Home</a></li>
                     <li><a href=" Resources.html">Resources</a></li>
-                    <li><a href=" Blog.html ">Blog</a></li>
+                    <li><a href="#">Projects/Competitions</a>
+                        <ul>
+                            <li><a href="#">2025</a>
+                                <ul>
+                                    <li><a href="#">Design Innovation Project Competition</a></li>
+                                    <li><a href="#">Micromouse Competition</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">2024</a>
+                                <ul>
+                                    <li><a href="#">Internal Project Challenge</a></li>
+                                    <li><a href="#">NTU EEEvolution Poster Competition</a></li>
+                                    <li><a href="#">Huawei Tech4City Competition</a></li>
+                                    <li><a href="#">DSTA CODE_EXP BrainHack Competition</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">2021</a>
+                                <ul>
+                                    <li><a href="#">Health & Wellness @ The Crowbar Awards Competition</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">2020</a>
+                                <ul>
+                                    <li><a href="#">Virtual Robocup Asia-Pacific Competition</a></li>
+                                    <li><a href="#">ROS Boot Camp Navigation Team Challenge</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <div id="main">
