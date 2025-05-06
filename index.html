@@ -1,170 +1,217 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-    <title>Jayvien Ng Zhen Yuan Website</title>
-    <link rel="stylesheet" type="text/css" href="Style.css"/>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            display: flex; /* Enable flexbox for overall layout */
-            flex-direction: column; /* Stack items vertically by default */
-            align-items: stretch; /* Stretch items to container width */
-            min-height: 100vh; /* Ensure full viewport height */
-            position: relative; /* Needed for absolute positioning of headshot in some cases */
-        }
-        #container {
-            width: 90%;
-            margin: auto;
-            overflow: hidden;
-            display: flex; /* Enable flexbox for main content area */
-            flex-direction: row; /* Arrange items in a row */
-            flex: 1; /* Allow container to grow and take up available space */
-        }
-        #header {
-            background: #003366;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-        }
-        #header img {
-            max-width: 100%;
-            height: auto;
-        }
-        #nav {
-            float: left;
-            width: 20%;
-            background: #ddd;
-            padding: 15px;
-            box-sizing: border-box;
-        }
-        #nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        #nav ul li {
-            margin: 10px 0;
-        }
-        #nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        #main {
-            float: left;
-            width: 60%; /* Adjusted width to accommodate the headshot */
-            padding: 15px;
-            box-sizing: border-box;
-        }
-        #main img, #main video {
-            max-width: 100%;
-            height: auto;
-            margin: 10px 0;
-        }
-        #footer {
-            clear: both;
-            background: #003366;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-        hr {
-            border: 0;
-            height: 2px;
-            background: #003366;
-            margin: 20px 0;
-        }
-        h1, h2, h3, h4 {
-            color: #003366;
-        }
 
-        #headshot-container {
-            width: 20%; /* Same width as nav */
-            padding: 15px;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-        }
+    <title>Jayvien Ng Zhen Yuan Website</title>
 
-        #headshot-frame {
-            border: 5px solid #003366;
-            border-radius: 10px;
-            padding: 10px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visual effect */
-            width: 80%; /* Take up 80% of the container width */
-            height: auto; /* Maintain aspect ratio */
-            max-width: 200px; /* Limit maximum width */
-        }
+    <link rel="stylesheet" type="text/css" href="Style.css"/>
 
-        #headshot-frame img {
-            max-width: 100%;
-            height: auto;
-            display: block; /* Ensure image behaves as a block element */
-        }
+    <style>
 
-        /* Responsive adjustments for smaller screens */
-        @media (max-width: 768px) {
-            #container {
-                flex-direction: column; /* Stack items vertically on small screens */
-            }
-            #nav, #main, #headshot-container {
-                width: 100%; /* Full width on small screens */
-                float: none; /* Remove float */
-            }
-            #nav {
-                order: 1; /* Make navigation appear first */
-            }
-            #main {
-                order: 2; /* Make main content appear second */
-            }
-            #headshot-container{
-                order: 3;
-            }
-            #header img {
-                max-width: 80%; /* Reduce image size on small screens */
-            }
-        }
-    </style>
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            line-height: 1.6;
+
+            background-color: #f4f4f4;
+
+        }
+
+        #container {
+
+            width: 90%;
+
+            margin: auto;
+
+            overflow: hidden;
+
+        }
+
+        #header {
+
+            background: #003366;
+
+            color: #ffffff;
+
+            padding: 20px;
+
+            text-align: center;
+
+        }
+
+        #header img {
+
+            max-width: 100%;
+
+            height: auto;
+
+        }
+
+        #nav {
+
+            float: left;
+
+            width: 20%;
+
+            background: #ddd;
+
+            padding: 15px;
+
+            box-sizing: border-box;
+
+        }
+
+        #nav ul {
+
+            list-style: none;
+
+            padding: 0;
+
+        }
+
+        #nav ul li {
+
+            margin: 10px 0;
+
+        }
+
+        #nav ul li a {
+
+            text-decoration: none;
+
+            color: #333;
+
+            font-weight: bold;
+
+        }
+
+        #main {
+
+            float: left;
+
+            width: 80%;
+
+            padding: 15px;
+
+            box-sizing: border-box;
+
+        }
+
+        #main img, #main video {
+
+            max-width: 100%;
+
+            height: auto;
+
+            margin: 10px 0;
+
+        }
+
+        #footer {
+
+            clear: both;
+
+            background: #003366;
+
+            color: #fff;
+
+            text-align: center;
+
+            padding: 10px 0;
+
+            margin-top: 20px;
+
+        }
+
+        hr {
+
+            border: 0;
+
+            height: 2px;
+
+            background: #003366;
+
+            margin: 20px 0;
+
+        }
+
+        h1, h2, h3, h4 {
+
+            color: #003366;
+
+        }
+
+    </style>
+
 </head>
+
 <body>
-    <div id="container">
-        <div id="header">
-            <h1>Welcome to My Website</h1>
-            <p>Hope you like it</p>
-            <hr>
-            <img src="welcomegif.gif" alt="Welcome!" />
-        </div>
-        <div id="content">
-            <div id="nav">
-                <h3>Navigation</h3>
-                <ul>
-                    <li><a href=" index.html ">Home</a></li>
-                    <li><a href=" Resources.html">Resources</a></li>
-                    <li><a href="Blog.html ">Blog</a></li>
-                </ul>
-            </div>
-            <div id="main">
-                <h2>Home page</h2>
-                <p>Hello! Meet Jayvien Ng Zhen Yuan, a dedicated and proactive individual currently pursuing Electrical & Electronic Engineering with a Minor in Entrepreneurship at NTU. His involvement in numerous co-curricular activities and sub-committees showcases his willingness to take initiative and contribute actively to various teams and events.</p>
-                <p>Throughout his academic journey, Jayvien has actively participated in several events and competitions, including IdeasJam 2024 and Escendo 2024 as part of the programs and operations committees respectively. His time in the SP Memory Sports Club also saw him host an Escape Game with the National Library and a cruise event, demonstrating his organizational skills and outreach capabilities. Furthermore, his participation in local competitions during his time in the Art Club at Jurong West Secondary School highlights his diverse interests and willingness to engage in different challenges.</p>
-                <p>Jayvien's dedication extends to his studies, as evidenced by his consistent academic achievements during his secondary school years at Jurong West Secondary School. He was recognized as a Top Student in Principles of Accounts, Mathematics, and Additional Mathematics in Sec 3 and received multiple Edusave Scholarships and Principal's List honors, underscoring his commitment to academic excellence.</p>
-                <p>An eager learner with a strong sense of responsibility, Jayvien is continuously looking for opportunities to enhance his skills and apply his knowledge in practical settings. His proficiency in various IT tools, from design software like Inventor and Fusion 360 to data analysis tools like Qilk Sense and SQL, along with programming languages such as C++ and Python, demonstrates his readiness to embrace new technologies and translate his learning into real-world applications. His willingness to seize any helpful opportunity further emphasizes his proactive approach to personal and professional growth.</p>
-            </div>
-            <div id="headshot-container">
-                <div id="headshot-frame">
-                    <img src="https://media.licdn.com/dms/image/D4E03AQFfF6j-j9tKAA/profile-displayphoto-shrink_400_400/0/1681297147781?e=17182368000&v=beta&t=7jFz-zL9yPz3x5qgJc-fKzHh6y9KzFco5L5f-e5EwE" alt="Jayvien Ng Zhen Yuan" />
-                </div>
-            </div>
-        </div>
-        <div id="footer">
-            Thank You
-        </div>
-    </div>
+
+    <div id="container">
+
+        <!-- Header Section -->
+
+        <div id="header">
+
+            <h1>Welcome to My Website</h1>
+
+            <p>Hope you like it</p>
+
+            <hr>
+
+            <img src="welcomegif.gif" alt="Welcome!" />
+
+        </div>
+
+        <div id="content">
+
+            <div id="nav">
+
+                <h3>Navigation</h3>
+
+                <ul>
+
+                    <li><a href=" index.html ">Home</a></li>
+
+                    <li><a href=" Resources.html">Resources</a></li>
+
+                    <li><a href="Blog.html ">Blog</a></li>
+
+                </ul>
+
+            </div>
+
+            <div id="main">
+
+                <h2>Home page</h2>
+
+                <p>Hello! Meet Jayvien Ng Zhen Yuan, a dedicated and proactive individual currently pursuing Electrical & Electronic Engineering with a Minor in Entrepreneurship at NTU. His involvement in numerous co-curricular activities and sub-committees showcases his willingness to take initiative and contribute actively to various teams and events.</p>
+
+                <p>Throughout his academic journey, Jayvien has actively participated in several events and competitions, including IdeasJam 2024 and Escendo 2024 as part of the programs and operations committees respectively. His time in the SP Memory Sports Club also saw him host an Escape Game with the National Library and a cruise event, demonstrating his organizational skills and outreach capabilities. Furthermore, his participation in local competitions during his time in the Art Club at Jurong West Secondary School highlights his diverse interests and willingness to engage in different challenges.</p>
+
+                <p>Jayvien's dedication extends to his studies, as evidenced by his consistent academic achievements during his secondary school years at Jurong West Secondary School. He was recognized as a Top Student in Principles of Accounts, Mathematics, and Additional Mathematics in Sec 3 and received multiple Edusave Scholarships and Principal's List honors, underscoring his commitment to academic excellence.</p>
+
+                <p>An eager learner with a strong sense of responsibility, Jayvien is continuously looking for opportunities to enhance his skills and apply his knowledge in practical settings. His proficiency in various IT tools, from design software like Inventor and Fusion 360 to data analysis tools like Qilk Sense and SQL, along with programming languages such as C++ and Python, demonstrates his readiness to embrace new technologies and translate his learning into real-world applications. His willingness to seize any helpful opportunity further emphasizes his proactive approach to personal and professional growth.</p>
+
+            </div>
+
+        </div>
+
+        <div id="footer">
+
+            Thank You
+
+        </div>
+
+    </div>
+
 </body>
+
 </html>
