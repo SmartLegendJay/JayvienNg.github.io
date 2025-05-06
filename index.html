@@ -17,14 +17,22 @@
             overflow: hidden;
         }
         #header {
-            background: #003366;
+            background-image: url('welcome.jpg'); /* Set the background image */
+            background-size: cover; /* Cover the entire header area */
+            background-position: center; /* Center the background image */
             color: #ffffff;
             padding: 20px;
             text-align: center;
+            position: relative; /* Needed for absolute positioning of the GIF */
+            height: auto; /* Adjust as needed to fit content */
         }
         #header img {
-            max-width: 150px; /* Reduced max-width */
+            max-width: 150px;
             height: auto;
+            position: absolute; /* Overlap the background */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the GIF */
         }
         #nav {
             float: left;
