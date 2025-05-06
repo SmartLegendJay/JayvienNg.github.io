@@ -103,8 +103,12 @@
             padding: 15px;
             box-sizing: border-box;
             display: flex; /* Enable flexbox for alignment */
-            flex-direction: column; /* Stack profile frame and text vertically */
-            align-items: flex-start; /* Align items to the start (left) */
+            align-items: flex-start; /* Align items to the start (top) */
+        }
+        #profile-info {
+            display: flex; /* Align photo and intro text */
+            align-items: center; /* Vertically align items */
+            margin-bottom: 20px; /* Space below the profile info */
         }
         #profile-frame {
             width: 150px; /* Adjust as needed */
@@ -112,22 +116,26 @@
             border: 2px solid #003366;
             border-radius: 50%; /* Make it circular */
             overflow: hidden;
-            margin-bottom: 20px; /* Space below the image */
-            display: flex; /* Center the text within the circle */
+            margin-right: 20px; /* Space between photo and text */
+            display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 14px; /* Adjust font size as needed */
-            color: #333; /* Adjust text color */
+            font-size: 14px;
+            color: #333;
             text-align: center;
             font-weight: bold;
         }
         #profile-frame img {
-            width: 0; /* Hide the image */
-            height: 0; /* Hide the image */
+            width: 0;
+            height: 0;
             object-fit: cover;
         }
-        #main-text {
-            flex-grow: 1; /* Allow text to take remaining height */
+        #intro-text {
+            font-size: 1.2em; /* Adjust as needed */
+            line-height: 1.4;
+        }
+        #main-content {
+            flex-grow: 1; /* Allow main content to take remaining width */
         }
         #footer {
             clear: both;
@@ -161,7 +169,7 @@
             <div id="nav">
                 <h3>Navigation</h3>
                 <ul>
-                    <li><a href=" index.html ">Home</a></li>
+                    <li><a href=" index.html ">About Jayvien</a></li>
                     <li><a href=" Resources.html">Resources</a></li>
                     <li><a href="#">Projects/Competitions</a>
                         <ul>
@@ -200,11 +208,15 @@
                 </ul>
             </div>
             <div id="main">
-                <div id="profile-frame">
-                    Your Photo
+                <div id="profile-info">
+                    <div id="profile-frame">
+                        Your Photo
+                    </div>
+                    <div id="intro-text">
+                        Hello! Meet <span class="important">Jayvien Ng Zhen Yuan</span>, a <span class="important">dedicated</span> and <span class="important">proactive</span> individual currently pursuing <span class="important">Electrical & Electronic Engineering</span> with a Minor in <span class="important">Entrepreneurship</span> at <span class="important">NTU</span>. His involvement in numerous <span class="important">co-curricular activities</span> and <span class="important">sub-committees</span> showcases his <span class="important">willingness to take initiative</span> and <span class="important">contribute actively</span> to various teams and events.
+                    </div>
                 </div>
-                <div id="main-text">
-                    <p>Hello! Meet <span class="important">Jayvien Ng Zhen Yuan</span>, a <span class="important">dedicated</span> and <span class="important">proactive</span> individual currently pursuing <span class="important">Electrical & Electronic Engineering</span> with a Minor in <span class="important">Entrepreneurship</span> at <span class="important">NTU</span>. His involvement in numerous <span class="important">co-curricular activities</span> and <span class="important">sub-committees</span> showcases his <span class="important">willingness to take initiative</span> and <span class="important">contribute actively</span> to various teams and events.</p>
+                <div id="main-content">
                     <p>Throughout his academic journey, <span class="important">Jayvien</span> has actively participated in several <span class="important">events and competitions</span>, including <span class="important">IdeasJam 2024</span> and <span class="important">Escendo 2024</span> as part of the programs and operations committees respectively. His time in the <span class="important">SP Memory Sports Club</span> also saw him host an <span class="important">Escape Game</span> with the <span class="important">National Library</span> and a <span class="important">cruise event</span>, demonstrating his <span class="important">organizational skills</span> and <span class="important">outreach capabilities</span>. Furthermore, his participation in local competitions during his time in the <span class="important">Art Club</span> at <span class="important">Jurong West Secondary School</span> highlights his <span class="important">diverse interests</span> and <span class="important">willingness to engage in different challenges</span>.</p>
                     <p><span class="important">Jayvien's dedication</span> extends to his studies, as evidenced by his <span class="important">consistent academic achievements</span> during his secondary school years at <span class="important">Jurong West Secondary School</span>. He was recognized as a <span class="important">Top Student</span> in <span class="important">Principles of Accounts</span>, <span class="important">Mathematics</span>, and <span class="important">Additional Mathematics</span> in Sec 3 and received multiple <span class="important">Edusave Scholarships</span> and <span class="important">Principal's List honors</span>, underscoring his <span class="important">commitment to academic excellence</span>.</p>
                     <p>An <span class="important">eager learner</span> with a <span class="important">strong sense of responsibility</span>, <span class="important">Jayvien</span> is continuously looking for <span class="important">opportunities to enhance his skills</span> and <span class="important">apply his knowledge in practical settings</span>. His proficiency in various <span class="important">IT tools</span>, from <span class="important">design software</span> like <span class="important">Inventor</span> and <span class="important">Fusion 360</span> to <span class="important">data analysis tools</span> like <span class="important">Qilk Sense</span> and <span class="important">SQL</span>, along with <span class="important">programming languages</span> such as <span class="important">C++</span> and <span class="important">Python</span>, demonstrates his <span class="important">readiness to embrace new technologies</span> and <span class="important">translate his learning into real-world applications</span>. His <span class="important">willingness to seize any helpful opportunity</span> further emphasizes his <span class="important">proactive approach to personal and professional growth</span>.</p>
